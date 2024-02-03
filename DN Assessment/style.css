@@ -1,0 +1,60 @@
+form {
+    margin: 100px auto;
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border: 4px solid black;
+    border-radius: 2em;
+    background-color: rgb(137,200,46);
+    font: 1em sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 45px;
+    text-align: middle;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+input {
+    font: 1em sans-serif;
+    width: 275px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.button {
+    padding-left: 40%
+}
+
+button{
+    margin-left: 0.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: rgb(231,0,100);
+    border-radius: 5px;
+    border-color: black;
+    font: 1em sans-serif;
+}
+
+input:invalid {
+    border-color: rgb(231,0,100);
+}
+
+input,
+input:valid {
+    border-color: rgb(137,200,46);
+}

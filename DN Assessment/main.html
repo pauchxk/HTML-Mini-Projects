@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html lang="en-gb">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="style.css" rel="stylesheet"/>
+        <title>Data Entry Form</title>
+    </head>
+
+    <body>
+
+        <form action="mailto:test@dn-uk.com" method="post" enctype="text/plain">
+
+            <ul>
+
+                <li>
+                    <label for="name">Name:</label>
+                    <input class="userdata" type="text" name="user_name" placeholder="Enter Your Name"
+                        pattern="[A-Za-z ]+" maxlength="30" required/>
+                </li>
+
+                <li>
+                    <label for="mail">Email:</label>
+                    <input class="userdata" type="email" name="user_email" placeholder="Enter Your Email"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required/>
+                </li>
+
+                <li>
+                    <label for="ccn">Card:</label>
+                    <input class="userdata" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" 
+                        maxlength="19" placeholder="Enter a Proxy Credit Card Number" name="user_cardnum"
+                        required/>
+                </li>
+
+                <li class="button">
+                    <button type="submit">Submit</button>
+                </li>
+
+            </ul>
+
+        </form>
+
+    </body>
+
+</html>
